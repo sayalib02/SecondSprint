@@ -36,7 +36,7 @@ class CartViewController: UIViewController {
         super.viewDidLoad()
         //fetchDetails()
         
-        let emailP = NSPredicate(format: "emailID MATCHES %@", userEmail as! String)
+        let emailP = NSPredicate(format: "emailID MATCHES %@", userEmail!)
 
         // Do any additional setup afterloading the view.
         let detailsFetch = NSFetchRequest<NSManagedObject>(entityName: "Item1")
@@ -73,7 +73,6 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource{
         //}
         
         let cell1 = yourCartTable.dequeueReusableCell(withIdentifier: "cell1", for: indexPath) as! YourCartTableViewCell
-        let eID = self.details[indexPath.row].emailID
         cell1.selectedTitle.text = self.details[indexPath.row].title
         cell1.selectedDescription.text = self.details[indexPath.row].describe
         

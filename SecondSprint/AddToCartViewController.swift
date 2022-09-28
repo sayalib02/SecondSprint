@@ -32,7 +32,6 @@ class AddToCartViewController: UIViewController {
         super.viewDidLoad()
         url = url + item
         fetchJSON()
-        //checking()
     }
     
     //Testing part

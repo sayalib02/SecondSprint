@@ -55,12 +55,13 @@ class UnitTestingClass: XCTestCase {
             return
         }
         
+        //Local Notification
         let localBtn: UIButton = try XCTUnwrap(localVc.localNotificationButton,"Local Notification not having referencing outlet")
         let localAct = try XCTUnwrap(localBtn.actions(forTarget:localVc, forControlEvent:.touchUpInside),"No action")
         XCTAssertEqual(localAct.count,1)
         
         
-        
+        // Map
         let mapBtn: UIButton = try XCTUnwrap(mapVc.orderNowButton,"Map not having referencing outlet")
         let mapAct = try XCTUnwrap(mapBtn.actions(forTarget:mapVc, forControlEvent:.touchUpInside),"No action")
         XCTAssertEqual(mapAct.count,1)
