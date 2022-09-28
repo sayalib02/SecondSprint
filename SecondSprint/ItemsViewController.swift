@@ -38,7 +38,6 @@ class ItemsViewController: UIViewController {
     func fetchJSON(){
         Alamofire.request("https://dummyjson.com/products/categories", method: .get, encoding: URLEncoding.default, headers: nil).responseJSON{
             (response) in
-            print(response.result)
             switch response.result
             {
             case .success:
@@ -48,7 +47,6 @@ class ItemsViewController: UIViewController {
                     self.items.append((data[index] as AnyObject).stringValue)
                     
                 }
-                print(self.items)
                 self.itemTable.reloadData()
                 
             case .failure:

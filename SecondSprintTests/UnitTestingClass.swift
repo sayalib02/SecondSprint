@@ -55,13 +55,6 @@ class UnitTestingClass: XCTestCase {
             return
         }
         
-        //XCTAssertEqual(cartAct.count,1)
-        
-        
-        
-                 
-            // Assert UIButton has action with a method name
-            //XCTAssertTrue(loginButtonActions.contains("loginButtonTapped:"))
         let localBtn: UIButton = try XCTUnwrap(localVc.localNotificationButton,"Local Notification not having referencing outlet")
         let localAct = try XCTUnwrap(localBtn.actions(forTarget:localVc, forControlEvent:.touchUpInside),"No action")
         XCTAssertEqual(localAct.count,1)
