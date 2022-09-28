@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item1" representedClassName="Item1" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SprintDetails" representedClassName="SprintDetails" syncable="YES">
+        <attribute name="emailID" optional="YES" attributeType="String"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="SprintDetails" positionX="0" positionY="117" width="128" height="89"/>
+        <element name="Item1" positionX="18" positionY="153" width="128" height="89"/>
+    </elements>
+</model>

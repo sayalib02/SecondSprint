@@ -1,0 +1,6 @@
+framework module Pods_SecondSprintTests {
+  umbrella header "Pods-SecondSprintTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
